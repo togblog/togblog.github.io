@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm Justin, a PhD student in Georgia Tech's ECE department. I'm interested in a bunch of things from harsh environment electronics (read radiation and nasty temperatures), to IC design, to signal processing, so hopefully whatever I post here runs the gambit on electrical engineering topics.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[email@domain.com](mailto:jpheimerl@gmail.com)

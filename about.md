@@ -12,4 +12,4 @@ I'm Justin, a PhD student in Georgia Tech's ECE department. I'm interested in a 
 
 ### Contact me
 
-[email@domain.com](mailto:jpheimerl@gmail.com)
+[jpheimerl@gmail.com](mailto:jpheimerl@gmail.com)

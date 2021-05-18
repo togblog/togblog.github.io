@@ -16,4 +16,5 @@ I'm Alex, an embedded systems dev at Northrop Grumman's Space Systems division. 
 ### Contact us
 
 [jpheimerl@gmail.com](mailto:jpheimerl@gmail.com)
+
 [lexi431@gmail.com](mailto:lexi431@gmail.com)

@@ -10,7 +10,7 @@ So who cares? Well all of modern society is built on this premise of information
 
 When we consider information flow really the first problem that comes to mind is speed. How fast can we go and still recieve the original, sent, data? What is the absolute maximum amount of information can we send in the presence of noise? The answer is spectacularly simple and is given by the famous Shannon-Hartley theorem.
 
-![Shannon]({{site.baseurl}}/images/Shannon.jpg)
+![Shannon]({{togblog.github.io}}/images/Shannon.jpg)
 
 Here C is the channel capacity in bits per second, B is the channel bandwidth in hertz, and S/N gives the signal to noise ratio (SNR) of the channel in linear units (not dB!). Commonly instead of looking at noise power and signal power in absolute units (just watts) we look at a more useful quantity reffered to as Eb/No. Eb is the energy per encoded bit, and No is the noise power spectral density, or the noise power across 1 Hz of bandwidth. This is really just a normalizaton of SNR per bit, not complex at all.
 
@@ -24,7 +24,7 @@ We could encode blocks of information using things like Hamming codes or BCH cod
 
 Ok so the idea is simple, how do we actually do it? It's really an extremely simple circuit that makes use only of delay elements and XOR's, and really all we're doing is building a digital filter. The image below should give a basic idea of the circuit. (The example I give is from wikipedia so I don't have to draw the trellis in the decoder, for a more formal explanation visit https://en.wikipedia.org/wiki/Convolutional_code)
 
-![Encoder]({{site.baseurl}}/images/Conv_Encoder.jpg)
+![Encoder]({{togblog.github.io}}/images/Conv_Encoder.jpg)
 
 Here D1 is the LSB, D3 is the MSB, and D1-D3 represent D flip flops, simply holding one logic value, 0 or 1. The XOR operation can be seen as well. The output for every clock cycle (the system is clocked to bring in data) is {S1,S2,S3} so input is one message bit m, the clock cycle hits, D3 takes the value from D2, D2 gets D1's previous values, and D1 takes the new message bit. The new output value is then computed and sent out over the channel. Easy! The hard part comes when we want to figure out the message that was originally sent, which I'll cover in the second part of this post.
 

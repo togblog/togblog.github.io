@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Commonly painful CUDA compilation/runtime errors
 
@@ -20,7 +20,7 @@ or wherever your CUDA files are stored on your machine.
 
 **"…code=38(cudaErrorNoDevice)”**
 
-For whatever reason your NVIDIA GPU (with sufficient compute capability) isn’t being detected, which can be due to a number of reasons. Entering
+For whatever reason your NVIDIA GPU (with sufficient compute capability) isn’t being detected, which is due to a number of reasons. Entering
 
 ```
 nvidia-smi

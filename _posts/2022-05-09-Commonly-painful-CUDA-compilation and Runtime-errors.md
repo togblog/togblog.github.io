@@ -13,8 +13,8 @@ The shared library cache couldn’t find the CUDA files, so you’ll need to poi
 
 ```
 sudo ldconfig /usr/local/cuda-x/lib64
-or wherever your CUDA files are stored on your machine.
 ```
+or wherever your CUDA files are stored on your machine.
 
 **"…code=38(cudaErrorNoDevice)”**
 
